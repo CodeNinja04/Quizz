@@ -4,12 +4,11 @@ import { useHistory } from "react-router-dom";
 import { Calendar } from "antd";
 import "antd/dist/antd.css";
 
-
-const PrivatePage = () => {
+const StudentPage = () => {
     let history = useHistory();
 
     function handleClick() {
-        history.push("/profile");
+        history.push("/student-profile");
     }
 
     function onPanelChange(value, mode) {
@@ -19,15 +18,17 @@ const PrivatePage = () => {
     return ( <
         div >
         <
-        h2 > Private Page < /h2> <Logout / >
+        h2 > Student Page < /h2> <Logout / >
         <
         button type = "button"
         onClick = { handleClick } >
         Profile { " " } <
-        /button> { " " } <
-        div > < Calendar / > < /div> < /
+        /button>{" "} <
+        div > { " " } <
+        Calendar / > { " " } <
+        /div>{" "} < /
         div >
     );
 };
 
-export default PrivatePage;
+export default StudentPage;

@@ -1,15 +1,14 @@
 import React from "react";
 import Login from "./Login";
 
-const PublicPage = () => {
+const StudentLogin = () => {
     return ( <
         div >
         <
-        h2 > Public Page < /h2> <
-        Login / >
+        h2 > Student Login < /h2> <Login / >
         <
         /div>
     );
 };
 
-export default PublicPage;
+export default StudentLogin;

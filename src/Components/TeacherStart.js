@@ -15,11 +15,11 @@ const PublicRouter = ({ component: Component, ...rest }) => {
                 Component {...props }
                 />
             ) : ( <
-                Redirect exact to = "/private" / >
+                Redirect exact to = "/teacher" / >
             )
         }
-        /> < /
-        div >
+        />{" "} <
+        /div>
     );
 };
 

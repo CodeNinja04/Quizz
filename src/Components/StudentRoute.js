@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { useGoogleAuth } from "../googleAuth";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
+const StudentRoute = ({ component: Component, ...rest }) => {
     const { isSignedIn } = useGoogleAuth();
 
     return ( <
@@ -15,13 +15,13 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
                 Component {...props }
                 />
             ) : ( <
-                Redirect exact from = "/private"
+                Redirect exact from = "/student"
                 to = "/" / >
             )
         }
-        /> <
-        /div>
+        />{" "} < /
+        div >
     );
 };
 
-export default PrivateRoute;
+export default StudentRoute;
