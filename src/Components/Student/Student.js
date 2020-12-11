@@ -25,6 +25,7 @@ import {
 } from "semantic-ui-react";
 
 import "semantic-ui-css/semantic.min.css";
+import Classrooms from "./Classrooms";
 
 const StudentPage = () => {
   let history = useHistory();
@@ -58,9 +59,9 @@ const StudentPage = () => {
       </div>
       <div>
         <div>
-          
+          <Classrooms />
         </div>{" "}
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{margin:"2%"}}>
           <Col span={8} className="gutter-row">
             <Card
               style={{ width: 300 }}
@@ -76,10 +77,10 @@ const StudentPage = () => {
                 avatar={
                   <Avatar src="https://img.icons8.com/cotton/2x/create-new--v1.png" />
                 }
-                title="CREATE CLASSROOM"
+                title="ATTEMPT QUIZZES"
               />
               <p> </p>
-              <Button primary>Create</Button>
+              <Button primary>Attempt</Button>
             </Card>
           </Col>
           <Col span={8} className="gutter-row">
@@ -98,10 +99,10 @@ const StudentPage = () => {
                 avatar={
                   <Avatar src="https://th.bing.com/th/id/OIP.qTV5a53Vb32dGTbEa3Hx9wHaFC?pid=Api&rs=1" />
                 }
-                title="QUESTION BANK"
+                title="QUIZZ SUMMARY"
               />
               <p></p>
-              <Button primary>ACCESS</Button>
+              <Button primary>ENTER</Button>
             </Card>
           </Col>
           <Col span={8} className="gutter-row">
@@ -119,10 +120,10 @@ const StudentPage = () => {
                 avatar={
                   <Avatar src="https://maxcdn.icons8.com/Share/icon/Time_And_Date/timer1600.png" />
                 }
-                title="SCHEDULE QUIZZES"
+                title="SCHEDULED QUIZZES"
               />
               <p></p>
-              <Button primary>SCHEDULE</Button>
+              <Button primary>CHECK</Button>
             </Card>
           </Col>
         </Row>
