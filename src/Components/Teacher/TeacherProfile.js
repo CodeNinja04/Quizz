@@ -6,6 +6,7 @@ const TeacherProfile = () => {
 
     return ( <
         div >
+        <div>TEACHER</div>
         <
         h1 > { googleUser.profileObj.name } < /h1>{" "} <
         p > { googleUser.profileObj.email } < /p>{" "} <

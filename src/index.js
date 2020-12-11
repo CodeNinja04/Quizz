@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GoogleAuthProvider } from "./googleAuth";
+import { GoogleAuthProvider } from "./Components/googleAuth";
 
 ReactDOM.render( <
     GoogleAuthProvider >

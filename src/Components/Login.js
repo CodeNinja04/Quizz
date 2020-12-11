@@ -1,5 +1,5 @@
 import React from "react";
-import { useGoogleAuth } from "../googleAuth";
+import { useGoogleAuth } from "./googleAuth";
 
 const Login = () => {
     const { signIn } = useGoogleAuth();
